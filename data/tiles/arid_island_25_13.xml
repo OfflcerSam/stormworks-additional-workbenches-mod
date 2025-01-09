@@ -11,13 +11,13 @@
 			<transform 30="-160.464828" 31="17.55142" 32="-7.082119"/>
 		</mesh>
 		<mesh id="workbench_01" file_name="meshes/workbench_static.mesh">
-			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="665.6" 31="17" 32="-26558.8"/>
+			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="-279" 31="16.38" 32="400.5"/>
 		</mesh>
 		<mesh id="workbench_02" file_name="meshes/workbench.mesh">
-			<transform 00="-0" 02="1" 20="-1" 22="-0" 30="787.9" 31="17" 32="-26575.8"/>
+			<transform 00="-0" 02="1" 20="-1" 22="-0" 30="-279.9" 31="16.35" 32="408.39"/>
 		</mesh>
 		<mesh id="sign_mesh" parent_id="sign_interact" file_name="meshes/for_sale_sign.mesh">
-			<transform 30="694.6" 31="17" 32="-26544.6"/>
+			<transform 30="-281" 31="16.36" 32="404.8"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
@@ -31,14 +31,14 @@
 		<physics_mesh id="physics_mesh2" file_name="meshes/arid_mainland_assets/shipwreck_d_phys.phys">
 			<transform 30="-160.464828" 31="17.55142" 32="-7.082119"/>
 		</physics_mesh>
-		<physics_mesh id="workbench_02_phys" file_name="meshes/workbench_phys.phys">
-			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="665.6" 31="17" 32="-26558.8"/>
-		</physics_mesh>
 		<physics_mesh id="workbench_01_phys" file_name="meshes/workbench_phys.phys">
-			<transform 00="-0" 02="1" 20="-1" 22="-0" 30="787.9" 31="17" 32="-26575.8"/>
+			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="-279" 31="16.38" 32="400.5"/>
+		</physics_mesh>
+			<physics_mesh id="workbench_02_phys" file_name="meshes/workbench_phys.phys">
+			<transform 00="-0" 02="1" 20="-1" 22="-0" 30="-279.9" 31="16.35" 32="408.39"/>
 		</physics_mesh>
 		<physics_mesh id="sign_phys" parent_id="sign_interact" file_name="meshes/for_sale_sign_phys.phys">
-			<transform 30="694.6" 31="17" 32="-26544.6"/>
+			<transform 30="-281" 31="16.36" 32="404.8"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -47,12 +47,12 @@
 	<lights_tube/>
 	<screens/>
 	<edit_areas>
-		<edit_area id="edit0" grid_size="0">
-			<transform 00="-1" 02="0" 20="-0" 22="-1" 30="787.9" 31="17" 32="-26575.8"/>
+		<edit_area id="edit0" grid_size="0" is_static="true">
+			<transform 30="-279" 31="16.38" 32="400.5"/>
 			<size x="300" y="300" z="300"/>
 		</edit_area>
-		<edit_area id="edit1" grid_size="0" is_static="true">
-			<transform 30="665.6" 31="17" 32="-26558.8"/>
+		<edit_area id="edit1" grid_size="0">
+			<transform 00="-1" 02="0" 20="-0" 22="-1" 30="-279.9" 31="16.35" 32="408.39"/>
 			<size x="300" y="300" z="300"/>
 		</edit_area>
 	</edit_areas>
@@ -62,11 +62,11 @@
 			<size x="1" y="2" z="2"/>
 		</interactable>
 		<interactable id="workbench_02_interact" target_object_id="edit0" label="Workbench" interact_type="2">
-			<transform 00="-0" 02="1" 20="-1" 22="-0" 30="787.9" 31="17" 32="-26575.8"/>
+			<transform 00="-0" 02="1" 20="-1" 22="-0" 30="-279.9" 31="16.35" 32="408.39"/>
 			<size x="1" y="2" z="2"/>
 		</interactable>
 		<interactable id="sign_interact" label="Buy Land" interact_type="3">
-			<transform 30="694.6" 31="17" 32="-26544.6"/>
+			<transform 30="-281" 31="16.36" 32="404.8"/>
 			<size x="3" y="2" z="2.21"/>
 		</interactable>
 	</interactables>
