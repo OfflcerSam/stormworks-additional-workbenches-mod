@@ -14,24 +14,25 @@ Example:
 Transform is split into 2 separate parts, Rotation and Coordinates
 
 ## Rotation
-Transform Rotation is represented as Quaternions on a scale of -1 to 1. The unity engine uses these to store magical rotational values.
+Transform rotation is represented as Quaternions as XYZW on a scale of -1 to 1 usually. The unity engine uses to magically calculate rotational values, I don't have a math degree and thus can't explain how these function. You cna probably use a visualizer to understand it a bit better or get a degree in math, whichever.
 
-According to an older post, these are rotational values to get 90 degree turns, remember that many objects have different default rotational values.
-[
-90* right:
+According to an older post, these are rotational values to get 90 degree turns, leaving the rotational values blank will result in the object facing it's default direction. Objects of course have different default directions they face. Inherently, the Workbench always faces West, thus a 90 Degree Right would make it North but for some reason the Edit Zone faces South by default.
+
+90 right:
 00="-0" 02="-1" 20="1" 22="-0"
 
-180*:
+180:
 00="-1" 02="0" 20="-0" 22="-1"
 
-270* right(90* left):
+270 right (90 left):
 00="-0" 02="1" 20="-1" 22="-0"
-]
+
+As noted: I have no clue which of these values are which, I'm assuming they are in either this order X, Y, Z, W or W, X, Y, Z.
 
 00="#" 
-02="#"
-20="#"
-22="#"
+02="#" 
+20="#" 
+22="#" 
 
 ## Coordinates
 Transform coordinates are relative to the tile's origin center, I think. To find these coordinates, load the tile in the mission locations part of the addon editor. Then place an object and look at the coordinates, those coordinates should be the correct ones for your object placement.
