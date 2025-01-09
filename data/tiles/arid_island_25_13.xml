@@ -46,7 +46,7 @@
 	<lights_spot/>
 	<lights_tube/>
 	<screens/>
-	<edit_areas/>
+	<edit_areas>
 		<edit_area id="edit0" grid_size="0">
 			<transform 00="-1" 02="0" 20="-0" 22="-1" 30="787.9" 31="-26575.8" 32="1488"/>
 			<size x="300" y="300" z="300"/>
@@ -56,7 +56,7 @@
 			<size x="300" y="300" z="300"/>
 		</edit_area>
 	</edit_areas>
-	<interactables/>
+	<interactables>
 		<interactable id="workbench_01_interact" target_object_id="edit1" label="Workbench" interact_type="2">
 			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="665.6" 31="-26558.8" 32="1488"/>
 			<size x="1" y="2" z="2"/>
