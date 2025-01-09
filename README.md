@@ -29,14 +29,14 @@ According to an older post, these are rotational values to get 90 degree turns, 
 
 As noted: I have no clue which of these values are which, I'm assuming they are in either this order X, Y, Z, W or W, X, Y, Z.
 
-00="#" 
-02="#" 
-20="#" 
-22="#" 
+- 00="#"
+- 02="#"
+- 20="#"
+- 22="#"
 
 ## Coordinates
 Transform coordinates are relative to the tile's origin center, I think. To find these coordinates, load the tile in the mission locations part of the addon editor. Then place an object and look at the coordinates, those coordinates should be the correct ones for your object placement.
 
-30="#" (X)
-31="#" (Y)
-32="#" (Z)
+- 30="#" (X)
+- 31="#" (Y)
+- 32="#" (Z)
