@@ -11,13 +11,13 @@
 			<transform 30="-160.464828" 31="17.55142" 32="-7.082119"/>
 		</mesh>
 		<mesh id="workbench_01" file_name="meshes/workbench_static.mesh">
-			<transform 00="-0" 02="1" 20="-1" 22="-0" 30="-279" 31="16.38" 32="400.5"/>
+			<transform 00="-0" 02="1" 20="-1" 22="-0" 30="-279" 31="16" 32="400.5"/>
 		</mesh>
 		<mesh id="workbench_02" file_name="meshes/workbench.mesh">
-			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="-279.9" 31="16.35" 32="408.39"/>
+			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="-279.9" 31="16" 32="408.39"/>
 		</mesh>
 		<mesh id="sign_mesh" parent_id="sign_interact" file_name="meshes/for_sale_sign.mesh">
-			<transform 30="-281" 31="16.36" 32="404.8"/>
+			<transform 30="-281" 31="16" 32="404.8"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
