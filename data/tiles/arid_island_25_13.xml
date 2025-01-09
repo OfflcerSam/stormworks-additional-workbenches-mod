@@ -11,10 +11,10 @@
 			<transform 30="-160.464828" 31="17.55142" 32="-7.082119"/>
 		</mesh>
 		<mesh id="workbench_01" file_name="meshes/workbench_static.mesh">
-			<transform 30="665.6" 31="-26558.8" 32="1488"/>
+			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="665.6" 31="-26558.8" 32="1488"/>
 		</mesh>
 		<mesh id="workbench_02" file_name="meshes/workbench.mesh">
-			<transform 30="787.9" 31="-26575.8" 32="1488"/>
+			<transform 00="-0" 02="1" 20="-1" 22="-0" 30="787.9" 31="-26575.8" 32="1488"/>
 		</mesh>
 		<mesh id="sign_mesh" parent_id="sign_interact" file_name="meshes/for_sale_sign.mesh">
 			<transform 30="694.6" 31="-26544.6" 32="1488"/>
@@ -32,10 +32,10 @@
 			<transform 30="-160.464828" 31="17.55142" 32="-7.082119"/>
 		</physics_mesh>
 		<physics_mesh id="workbench_02_phys" file_name="meshes/workbench_phys.phys">
-			<transform 30="665.6" 31="-26558.8" 32="1488"/>
+			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="665.6" 31="-26558.8" 32="1488"/>
 		</physics_mesh>
 		<physics_mesh id="workbench_01_phys" file_name="meshes/workbench_phys.phys">
-			<transform 30="787.9" 31="-26575.8" 32="1488"/>
+			<transform 00="-0" 02="1" 20="-1" 22="-0" 30="787.9" 31="-26575.8" 32="1488"/>
 		</physics_mesh>
 		<physics_mesh id="sign_phys" parent_id="sign_interact" file_name="meshes/for_sale_sign_phys.phys">
 			<transform 30="694.6" 31="-26544.6" 32="1488"/>
@@ -47,15 +47,29 @@
 	<lights_tube/>
 	<screens/>
 	<edit_areas/>
-		<edit_area id="edit0" grid_size="2">
-			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="25.010742" 31="2.276947" 32="-40.939636"/>
-			<size x="22.5" y="20.5" z="57.25"/>
+		<edit_area id="edit0" grid_size="0">
+			<transform 00="-1" 02="0" 20="-0" 22="-1" 30="787.9" 31="-26575.8" 32="1488"/>
+			<size x="300" y="300" z="300"/>
 		</edit_area>
-		<edit_area id="edit1" grid_size="6" is_static="true">
-			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="4.801025" 31="8.31308" 32="-14.007568"/>
-			<size x="36.5" y="20.5" z="36.5"/>
+		<edit_area id="edit1" grid_size="0" is_static="true">
+			<transform 30="665.6" 31="-26558.8" 32="1488"/>
+			<size x="300" y="300" z="300"/>
 		</edit_area>
+	</edit_areas>
 	<interactables/>
+		<interactable id="workbench_01_interact" target_object_id="edit1" label="Workbench" interact_type="2">
+			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="665.6" 31="-26558.8" 32="1488"/>
+			<size x="1" y="2" z="2"/>
+		</interactable>
+		<interactable id="workbench_02_interact" target_object_id="edit0" label="Workbench" interact_type="2">
+			<transform 00="-0" 02="1" 20="-1" 22="-0" 30="787.9" 31="-26575.8" 32="1488"/>
+			<size x="1" y="2" z="2"/>
+		</interactable>
+		<interactable id="sign_interact" label="Buy Land" interact_type="3">
+			<transform 30="694.6" 31="-26544.6" 32="1488"/>
+			<size x="3" y="2" z="2.21"/>
+		</interactable>
+	</interactables>
 	<door_logic_nodes/>
 	<light_logic_nodes/>
 	<rotation_logic_nodes/>
