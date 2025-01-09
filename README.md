@@ -4,6 +4,7 @@ benchwork in the workstorm
 
 This page is to keep track of my XML edits so I don't cry later.
 But will probably just be abandoned cause I hate editing XMLs to do anything, but I'll keep my findings here I guess.
+
 Local Mod Folder: (User)\AppData\Roaming\Stormworks\data\mods\
 Mod folder has to be created if you don't have one.
 
