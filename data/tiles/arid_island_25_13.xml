@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="true" tile_type="2">
+<definition is_island="true" tile_type="2" is_purchasable="true" purchase_cost="70000">
 	<meshes>
 		<mesh id="mesh0" file_name="meshes/arid_mainland/arid_island_25_13.mesh">
 			<transform/>
@@ -9,6 +9,15 @@
 		</mesh>
 		<mesh id="mesh2" file_name="meshes/arid_mainland_assets/shipwreck_d.mesh">
 			<transform 30="-160.464828" 31="17.55142" 32="-7.082119"/>
+		</mesh>
+		<mesh id="workbench_01" file_name="meshes/workbench_static.mesh">
+			<transform 30="665.6" 31="-26558.8" 32="1488"/>
+		</mesh>
+		<mesh id="workbench_02" file_name="meshes/workbench.mesh">
+			<transform 30="787.9" 31="-26575.8" 32="1488"/>
+		</mesh>
+		<mesh id="sign_mesh" parent_id="sign_interact" file_name="meshes/for_sale_sign.mesh">
+			<transform 30="694.6" 31="-26544.6" 32="1488"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
@@ -22,6 +31,15 @@
 		<physics_mesh id="physics_mesh2" file_name="meshes/arid_mainland_assets/shipwreck_d_phys.phys">
 			<transform 30="-160.464828" 31="17.55142" 32="-7.082119"/>
 		</physics_mesh>
+		<physics_mesh id="workbench_02_phys" file_name="meshes/workbench_phys.phys">
+			<transform 30="665.6" 31="-26558.8" 32="1488"/>
+		</physics_mesh>
+		<physics_mesh id="workbench_01_phys" file_name="meshes/workbench_phys.phys">
+			<transform 30="787.9" 31="-26575.8" 32="1488"/>
+		</physics_mesh>
+		<physics_mesh id="sign_phys" parent_id="sign_interact" file_name="meshes/for_sale_sign_phys.phys">
+			<transform 30="694.6" 31="-26544.6" 32="1488"/>
+		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
 	<lights_omni/>
@@ -29,6 +47,14 @@
 	<lights_tube/>
 	<screens/>
 	<edit_areas/>
+		<edit_area id="edit0" grid_size="2">
+			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="25.010742" 31="2.276947" 32="-40.939636"/>
+			<size x="22.5" y="20.5" z="57.25"/>
+		</edit_area>
+		<edit_area id="edit1" grid_size="6" is_static="true">
+			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="4.801025" 31="8.31308" 32="-14.007568"/>
+			<size x="36.5" y="20.5" z="36.5"/>
+		</edit_area>
 	<interactables/>
 	<door_logic_nodes/>
 	<light_logic_nodes/>
